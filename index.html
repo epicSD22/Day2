@@ -2,23 +2,34 @@
 <html>
 <head>
     <title>Travel With Us</title>
+
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+
+            /* Travel Background Image */
+            background-image: url("https://source.unsplash.com/1600x900/?travel,adventure");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Dark overlay for readability */
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+            min-height: 100vh;
+            color: white;
         }
 
         header {
-            background-color: #008080;
-            color: white;
-            padding: 20px;
+            padding: 60px;
             text-align: center;
         }
 
         nav {
-            background-color: #004d4d;
-            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 12px;
             text-align: center;
         }
 
@@ -30,21 +41,22 @@
         }
 
         .container {
-            padding: 20px;
+            padding: 40px;
         }
 
         .places {
             display: flex;
             justify-content: space-around;
-            margin-top: 20px;
+            margin-top: 30px;
         }
 
         .card {
             background-color: white;
+            color: black;
             width: 30%;
             padding: 10px;
-            text-align: center;
             border-radius: 8px;
+            text-align: center;
         }
 
         .card img {
@@ -54,19 +66,20 @@
         }
 
         footer {
-            background-color: #008080;
-            color: white;
+            background-color: rgba(0, 0, 0, 0.8);
             text-align: center;
             padding: 10px;
-            margin-top: 20px;
         }
     </style>
 </head>
+
 <body>
+
+<div class="overlay">
 
     <header>
         <h1>Travel With Us</h1>
-        <p>Explore the world, one journey at a time 🌍</p>
+        <p>Discover new places, create unforgettable memories 🌍</p>
     </header>
 
     <nav>
@@ -76,34 +89,36 @@
     </nav>
 
     <div class="container">
-        <h2>Popular Destinations</h2>
+        <h2>Top Destinations</h2>
 
         <div class="places">
 
             <div class="card">
-                <img src="https://source.unsplash.com/400x300/?goa,beach" alt="Goa">
+                <img src="https://source.unsplash.com/400x300/?beach,travel" alt="Beach">
                 <h3>Goa</h3>
-                <p>Enjoy sunny beaches and vibrant nightlife.</p>
+                <p>Relax on sunny beaches and enjoy nightlife.</p>
             </div>
 
             <div class="card">
-                <img src="https://source.unsplash.com/400x300/?manali,mountains" alt="Manali">
+                <img src="https://source.unsplash.com/400x300/?mountains,travel" alt="Mountains">
                 <h3>Manali</h3>
-                <p>Experience peace in the mountains.</p>
+                <p>Feel peace in the mountains and fresh air.</p>
             </div>
 
             <div class="card">
-                <img src="https://source.unsplash.com/400x300/?paris,eiffel" alt="Paris">
+                <img src="https://source.unsplash.com/400x300/?city,travel" alt="City">
                 <h3>Paris</h3>
-                <p>Fall in love with the city of lights.</p>
+                <p>Explore art, culture, and romance.</p>
             </div>
 
         </div>
     </div>
 
     <footer>
-        <p>© 2025 Travel With Us | Made for Learning</p>
+        <p>© 2025 Travel With Us | Simple Travel Website</p>
     </footer>
+
+</div>
 
 </body>
 </html>
