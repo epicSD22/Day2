@@ -2,26 +2,108 @@
 <html>
 <head>
     <title>Travel With Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #008080;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #004d4d;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .places {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .card {
+            background-color: white;
+            width: 30%;
+            padding: 10px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #008080;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Welcome to Travel With Us</h1>
+    <header>
+        <h1>Travel With Us</h1>
+        <p>Explore the world, one journey at a time 🌍</p>
+    </header>
 
-    <p>Your journey begins here. Explore beautiful places around the world.</p>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-    <h2>Popular Destinations</h2>
-    <ul>
-        <li>Goa</li>
-        <li>Manali</li>
-        <li>Paris</li>
-        <li>Dubai</li>
-    </ul>
+    <div class="container">
+        <h2>Popular Destinations</h2>
 
-    <hr>
+        <div class="places">
 
-    <a href="about.html">About Us</a> |
-    <a href="contact.html">Contact Us</a>
+            <div class="card">
+                <img src="https://source.unsplash.com/400x300/?goa,beach" alt="Goa">
+                <h3>Goa</h3>
+                <p>Enjoy sunny beaches and vibrant nightlife.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://source.unsplash.com/400x300/?manali,mountains" alt="Manali">
+                <h3>Manali</h3>
+                <p>Experience peace in the mountains.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://source.unsplash.com/400x300/?paris,eiffel" alt="Paris">
+                <h3>Paris</h3>
+                <p>Fall in love with the city of lights.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Travel With Us | Made for Learning</p>
+    </footer>
 
 </body>
 </html>
-
